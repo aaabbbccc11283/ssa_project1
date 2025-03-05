@@ -16,4 +16,21 @@ class GroupCreationForm(forms.ModelForm):
         if commit:
             group.save()
             group.members.add(self.user)  # Add the admin to the members list
-        return group
+        return 
+    
+from .models import Comment
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['content']
+        widgets = {
+            'content': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Enter your comment...'})
+        }
+
+    # Clean the content to sanitise input
+    def clean_content(self):
+        content = self.cleaned_data.get('content')
+        if "<script>" in content.lower():  # Prevent XSS by checking for script tags
+            raise forms.ValidationError("Invalid content.")
+        return content
