@@ -1,0 +1,59 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2461
+"GET /users/ HTTP/1.1" 302 0
+"GET /users/login/?next=/users/ HTTP/1.1" 200 1777
+"POST /users/login/ HTTP/1.1" 302 0
+"GET /users/ HTTP/1.1" 200 1005
+"GET /chipin/ HTTP/1.1" 200 1590
+"GET /chipin/group/1/ HTTP/1.1" 200 2022
+"POST /chipin/group/1/ HTTP/1.1" 302 0
+"GET /chipin/group/1/ HTTP/1.1" 200 2415
+"POST /chipin/group/1/ HTTP/1.1" 200 2517
+"POST /chipin/group/1/ HTTP/1.1" 302 0
+"GET /chipin/group/1/ HTTP/1.1" 200 3034
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2461
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2512
+"GET /users HTTP/1.1" 301 0
+"GET /users/ HTTP/1.1" 302 0
+"GET /users/login/?next=/users/ HTTP/1.1" 200 1777
+"GET /static/chipin/Wendy.png HTTP/1.1" 200 7814
+"GET /static/chipin/styles.css HTTP/1.1" 200 1789
+"GET /users/login/?next=/users/ HTTP/1.1" 200 2005
+"GET /static/chipin/styles.css HTTP/1.1" 304 0
+"GET /static/chipin/Wendy.png HTTP/1.1" 304 0
+"POST /users/logout/ HTTP/1.1" 302 0
+"GET /users/login/ HTTP/1.1" 200 1907
+"GET /users/login/ HTTP/1.1" 200 1777
+"POST /users/login/ HTTP/1.1" 302 0
+"GET /users/ HTTP/1.1" 200 1005
+"GET /chipin/ HTTP/1.1" 200 1590
+"GET /chipin/group/1/ HTTP/1.1" 200 3034
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2461
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2512
+"GET /users/ HTTP/1.1" 200 1005
+"GET /static/chipin/styles.css HTTP/1.1" 304 0
+"GET /chipin/ HTTP/1.1" 200 1590
+"POST /users/logout/ HTTP/1.1" 302 0
+"GET /users/login/ HTTP/1.1" 200 1907
+"POST /users/login/ HTTP/1.1" 302 0
+"GET /users/ HTTP/1.1" 200 1009
+"GET /chipin/ HTTP/1.1" 200 1408
+- Broken pipe from ('127.0.0.1', 54374)
+"POST /users/logout/ HTTP/1.1" 302 0
+"GET /users/login/ HTTP/1.1" 200 1907
+"POST /users/login/ HTTP/1.1" 302 0
+"GET /users/ HTTP/1.1" 200 1005
+"GET /chipin/ HTTP/1.1" 200 1590
+"GET /chipin/group/1/ HTTP/1.1" 200 3270
+"GET /chipin/group/1/create_event/ HTTP/1.1" 200 1466
+"POST /chipin/group/1/create_event/ HTTP/1.1" 302 0
+"GET /chipin/group/1/ HTTP/1.1" 200 4449
+"POST /chipin/group/1/ HTTP/1.1" 302 0
+"GET /chipin/group/1/ HTTP/1.1" 200 4848
